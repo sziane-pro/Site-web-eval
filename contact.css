@@ -1,0 +1,378 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  overflow: auto;
+  font-family: "Montserrat";
+  background-color: #181D2D;
+}
+
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181D2D;
+  margin-bottom: 100px;
+}
+
+.logo img {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+nav ul {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: larger;
+
+}
+
+nav a:hover {
+  text-decoration-color: #7ab5ea;
+  text-decoration-thickness: 3px;
+  text-decoration: overline;
+  text-decoration-style: solid;
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid black;
+  width: 35%;
+  height: 75%;
+  margin: auto;
+  background-color: #7ab5ea;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 1px 10px #9cd0fd;
+}
+
+.conteneur h1 {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.champs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.nom {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.nom input {
+  width: 150px;
+  height: 30px;
+  font-size: large;
+  color: #ffffff;
+  background-color: #7ab5ea;
+  border: none;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+}
+
+.nom input::placeholder {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.nom input:focus::placeholder {
+  visibility: hidden;
+}
+
+.nom input:focus-visible {
+  outline-style: none;
+}
+
+.nom input:focus {
+  border-bottom: 2px solid #181d2d;
+  color: #181D2D;
+}
+
+
+.prenom {
+  margin-top: 34px;
+  margin-bottom: 15px;
+}
+
+.prenom input {
+  width: 150px;
+  height: 30px;
+  font-size: large;
+  color: #ffffff;
+  background-color: #7ab5ea;
+  border: none;
+  border-bottom: 2px solid;
+  text-transform: capitalize;
+}
+
+.prenom input::placeholder {
+  color: #ffffff;
+}
+
+.prenom input:focus::placeholder {
+  visibility: hidden;
+}
+
+.prenom input:focus-visible {
+  outline-style: none;
+}
+
+.prenom input:focus {
+  border-bottom: 2px solid #181d2d;
+  color: #181D2D;
+}
+
+.date {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.date label {
+  font-size: large;
+  color: #fff;
+}
+
+.date input {
+  margin-top: 3px;
+  background-color: #7ab5ea;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: large;
+}
+
+.date input::placeholder {
+  color: #fff;
+}
+
+
+.selecteur {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selecteur label {
+  color: #fff;
+  font-size: large;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.selecteur select {
+  font-size: 16px;
+  color: #fff;
+  background-color: #7ab5ea;
+  border: none;
+  border-bottom: 2px solid #fff;
+  appearance: none;
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+  border-radius: 0px;
+}
+
+.selecteur select:focus-visible {
+  outline-style: none;
+}
+
+
+.selecteur select:valid {
+  color: #181d2d;
+  border-bottom: 2px solid #181D2D;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.message label {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: larger;
+  color: #ffffff;
+}
+
+.message textarea {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+  max-width: 70%;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Montserrat';
+  background-color: #181D2D;
+  color: #fff;
+}
+
+.message textarea:focus-visible {
+  outline-style: solid;
+  outline-color: #fff;
+  outline-width: 2px;
+}
+
+.message textarea:focus {
+  border: #fff;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 3%;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  font-size: large;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border-style: none;
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px black;
+}
+
+.none {
+  display: none;
+}
+
+
+
+form button:hover {
+  background-color: #181d2d;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+footer {
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+.colonne h5 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.colonne1 ul li {
+  line-height: 1.5;
+  color: #181D2D;
+  list-style: none;
+}
+
+.colonne2 ul li {
+  line-height: 1.5;
+  color: #181D2D;
+  list-style: none;
+}
+
+.colonne1 ul li a {
+  color: #181D2D;
+  text-decoration: none;
+}
+
+.colonne2 ul li a {
+  color: #181D2D;
+  text-decoration: none;
+
+}
+
+.colonne1 ul li a:hover {
+  text-decoration: underline;
+}
+
+.colonne2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.colonne {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rs {
+  text-align: center
+}
+
+
+.rs ul img {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.rs ul {
+  padding: 0;
+}
+
+.rs li {
+  display: inline;
+}
+
+.flex-end {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  color: #181D2D;
+}
+
+.link p:first-child:hover {
+  text-decoration: underline;
+}
+
+.link p:last-child:hover {
+  text-decoration: underline;
+}
+
+.lien {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000;
+}
